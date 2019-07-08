@@ -12,7 +12,7 @@
 	
 	\textbf{Header und using namespace:} \\
 	Kein \lstinline!using namespace std;! Wenn eine Funktion aus
-	dem diesem Namespace gebraucht wird kann mit dem vollen Namen darauf
+	diesem Namespace gebraucht wird kann mit dem vollen Namen darauf
 	zugegriffen werden. (\lstinline!std::cout << "..." << std::endl;!)
 \end{multicols}
 
@@ -37,7 +37,7 @@ bar(a); // Uebergabe von this
 \subsection{Assoziationen}
 \subsubsection{"`0..1:0..1"'}
 \begin{multicols}{2}
-Vorwärtsdekleration wird gebraucht, wenn zwei Klassen sich gegenseitig referenzieren. \\
+Vorwärtsdeklaration wird gebraucht, wenn sich zwei Klassen gegenseitig referenzieren. \\
 
 \textbf{Header A:}
 \begin{lstlisting}
@@ -89,9 +89,9 @@ a.setB(&b);
 
 \subsubsection{"`1:0..1"'}
 Eine 1:0..1 Assoziation kann ähnlich wie eine 0..1:0..1 Assoziation
-implementiert weden. Wobei auf der "`1 Seite"' die andere Klasse direkt im
+implementiert werden. Wobei auf der "`1 Seite"' die andere Klasse direkt im
 Konstruktor mitgegeben wird. Ein Setter wird auf der B-Seite nicht mehr
-gebraucht! Achtung: untenstehende Implementation zeigt nur schematisch auf wie
+gebraucht! \textbf{Achtung:} Untenstehende Implementation zeigt nur schematisch auf, wie
 es funktioniert. Copy- und Zuweisungskonstruktor müssten auch noch korrekt
 implementiert werden.
 \begin{multicols}{2}

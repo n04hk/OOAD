@@ -1,15 +1,13 @@
-\section{OOD}
-\subsection{Ziel des Entwurfs}
+\section{OOD \balzert{251}}
+\subsection{Ziele des Entwurfs}
   \begin{itemize}[leftmargin=0.5cm]
-    \item Spezifizierte Anwendung auf einer Plattform unter den gefordeten technischen
-      Randbedinungen zu ralisieren
-    \item Entwurf liegt noch in einem höheren Abstaktionsniveau als in der Implementierung
+    \item Spezifizierte Anwendung auf einer Plattform unter den geforderten technischen Randbedingungen zu realisieren.
+    \item Entwurf liegt in einem noch höheren Abstraktionsniveau als in der Implementierung.
     \item In der Entwurfsphase wird das OOD-Modell unter den Gesichtspunkten
-      der Effizienz und Standartisierung konzipiert.
-    \item Jede entworfene Klasse kann direkt implementiert werden
-    \item Das OOD-Modell baut auf dem OOA-Modell auf
-    \item Die Namen in dem OOD-Modell sollten der Syntax der jeweiligen Progarmmiersprache
-      entsprechen.
+      der Effizienz und Standardisierung konzipiert.
+    \item Jede entworfene Klasse kann direkt implementiert werden.
+    \item Das OOD-Modell baut auf dem OOA-Modell auf.
+    \item Die Namen im OOD-Modell sollten der Syntax der jeweiligen Programmiersprache entsprechen.
   \end{itemize}
 
   \parbox{9cm}{\includegraphics[width=9cm]{./bilder/Konzepte.png}}
@@ -19,10 +17,10 @@
     \item[parametrisierte Klasse]
       Template
     \item[Container Klasse]
-      dient zur Verwaltung von einer Menge von Objekten einer anderen Klasse
-      (typischerweise als Array implementiert)
+      Dient zur Verwaltung von einer Menge von Objekten einer anderen Klasse
+      (typischerweise als Array implementiert).
     \item[Schnittstelle \Balzert{256}]
-      \parbox{5cm}{ähnlich wie abstrakte Klasse, aber \textbf{keine Operation} ist implementiert}
+      \parbox{5cm}{Ähnlich wie abstrakte Klasse, aber \textbf{keine Operation} ist implementiert.}
       \hspace{0.5cm}
       \parbox{7cm}{\includegraphics[width=7cm]{./bilder/Schnittstelle.png}}
     \item[Implementierung]
@@ -40,22 +38,22 @@
         \item[$\sim$] package
       \end{itemize}
     \item[Klassenattribute]
-      werden durch \underline{Unterstrichen} gekennzeichnet und mit \textbf{static} implementiert
+      Werden durch \underline{Unterstriche} gekennzeichnet und mit \textbf{static} implementiert.
     \item[Notation]
       Sichtbarkeit / \textbf{name} : Typ [Multiplizität] = Anfangswert $\lbrace$Eigenschaftswert$\rbrace$ \\
     \parbox{6cm}{
       \item[Eigenschaftswerte]
         siehe \Balzert{263}
       \item[Implementation]
-        siehe \Balzert{264} }
+        siehe \Balzert{264, 265} }
     \parbox{6cm}{\includegraphics[width=5cm]{./bilder/Notation_Attribute.png}}
   \end{description}
   
   
-\subsection{Operationen \balzert{266}}
+\subsection{Operation \balzert{266}}
   \begin{description}
     \item[Notation]
-      Sichtbarkeit \textbf{name} (Parameterliste) : Ergenistyp $\lbrace$Eigenschaftswert$\rbrace$
+      Sichtbarkeit \textbf{name} (Parameterliste) : Ereignistyp $\lbrace$Eigenschaftswert$\rbrace$
     \item[Parameter]
       Richtung parametername : Typ [Multiplizität] = Anfangswert $\lbrace$Eigenschaftswert$\rbrace$ \\
       \parbox[t]{2cm}{Richtung: }
@@ -69,8 +67,8 @@
   
 \subsection{Komponente \balzert{273}}
   \begin{minipage}{12cm}
-    Eine Komponente ist ein Softwarebaustein, der über klar definierte Schnittstellen, Verhalten bereitstellt.
-    Das Innenleben der Komponente bleibt gegen aussen verborgen
+    Eine Komponente ist ein Softwarebaustein, der über klar definierte Schnittstellen Verhalten bereitstellt.
+    Das Innenleben der Komponente bleibt gegen aussen verborgen.
   \end{minipage}
   \begin{minipage}{6cm}
     \includegraphics[width=6cm]{./bilder/Komponente.png}
@@ -100,7 +98,6 @@
   Polymorphismus ermöglicht es, den gleichen Namen für gleichartige Operationen,
   in verschiedenen Klassen zu gebrauchen.
   \begin{description}
-    \item[]
     \item[Notation]
       Operation \textit{kursiv} schreiben
     \item[Dekleration]
@@ -121,14 +118,13 @@
   
 
 \subsection{Szenario \balzert{327}}
-  bezieht sich auf Sequenzdiagramme
+  Bezieht sich auf Sequenzdiagramme.
   \begin{description}
     \item[synchrone Nachricht]
       Der Sender wartet bis der Empfänger die Verarbeitung komplett durchgeführt hat.
     \item[asynchrone Nachricht]
-      Der Sender wartet \textbf{nicht} bis auf den Empfänger, sondern setzt seine Verarbeitung
-      parallel fort.
-    \item[kominierte Fragmente]
+      Der Sender wartet \textbf{nicht} bis auf den Empfänger, sondern setzt seine Verarbeitung parallel fort. Werden immer durch Signale realisiert.
+    \item[kombinierte Fragmente]
       siehe \Balzert{331}
     \item[Notation]
       \parbox{15cm}{\includegraphics[width=10cm]{./bilder/Notation_Sequanzdia.png}}
